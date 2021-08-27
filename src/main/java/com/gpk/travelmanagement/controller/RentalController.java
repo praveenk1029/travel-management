@@ -15,4 +15,10 @@ public class RentalController {
     public List<String> getAvailableCars(){
         return Arrays.asList("Compact", "Economy", "Full Size", "Mini Van");
     }
+
+    @GetMapping(value = "/getAvailableTrucks")
+    public List<String> getAvailableTrucks(){
+        return Arrays.asList("Pick-Up-Truck", "Cargo Van", "Container");
+    }
+
 }
